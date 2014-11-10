@@ -17,21 +17,24 @@ html {
 
 
 nav {
+	position: fixed;
+z-index: 9999;
 	background-color: #fff;
 	border: 1px solid #dedede;
 	border-radius: 4px;
 	box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
 	color: #888;
 	display: block;
-	margin: 8px 22px 8px 22px;
 	overflow: hidden;
 	width: 100%; 
+	margin-top: -18rem;
 }
 
 nav ul {
 	margin: 0;
 	padding: 0;
 	float:right;
+
 }
 
 	nav ul li {
@@ -85,7 +88,7 @@ nav > ul > li > a > .caret {
 
 
 
-nav > ul > li > div {
+nav > ul > li > ul {
 	background-color: rgb( 40, 44, 47 );
 	border-top: 0;
 	border-radius: 0 0 4px 4px;
@@ -105,24 +108,24 @@ nav > ul > li > div {
 	-transition: opacity 0.2s;
 }
 
-	nav > ul > li > div ul > li {
+	nav > ul ul > li {
 		display: block;
 	}
 	
-		nav > ul > li > div ul > li > a {
+		nav > ul ul > li > a {
 			color: #fff;
 			display: block;
 			padding: 12px 24px;
 			text-decoration: none;
 		}
 	
-	nav > ul > li > div ul > li:hover > a {
+	nav > ul ul > li:hover > a {
 		background-color: rgba( 255, 255, 255, 0.1);
 	}
   	
 
 
-  	nav > ul > li:hover > div {
+  	nav > ul > li:hover > ul {
 	display: block;
 	opacity: 1;
 	visibility: visible;
@@ -173,7 +176,6 @@ margin-right: 5px;
 
 .half.learn {
 text-align: right;
-padding: 1.5rem 2.5rem;
 }
 
 .half.watch {
@@ -189,4 +191,24 @@ display: inline-block;
 vertical-align: bottom;
 font-size: 1.125rem;
 line-height: 1.2;
+}
+
+.cases{
+	text-align: center;
+	font-size: 3.125rem;
+	margin-top:17.5rem;
+	background-color: white;
+	padding: 1rem 0.938rem;
+
+}
+
+h2{
+	line-height: 4rem;
+}
+.cases .devices {
+    width: 20.3333333%;
+    display: inline-block;
+    padding: 1rem 0.938rem;
+    /* styles to assist with debugging */
+    height: 4em;
 }
