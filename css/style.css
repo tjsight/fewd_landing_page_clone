@@ -18,7 +18,7 @@ html {
 
 nav {
 	position: fixed;
-z-index: 9999;
+    z-index: 9999;
 	background-color: #fff;
 	border: 1px solid #dedede;
 	border-radius: 4px;
@@ -27,7 +27,7 @@ z-index: 9999;
 	display: block;
 	overflow: hidden;
 	width: 100%; 
-	margin-top: -18rem;
+	/*margin-top: -18rem;*/
 }
 
 nav ul {
@@ -130,6 +130,9 @@ nav > ul > li > ul {
 	opacity: 1;
 	visibility: visible;
 }
+.introduction{
+	overflow: auto;
+}
 	
 
 .introduction h1{
@@ -199,6 +202,7 @@ line-height: 1.2;
 	margin-top:17.5rem;
 	background-color: white;
 	padding: 1rem 0.938rem;
+	po
 
 }
 
